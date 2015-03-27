@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+
+</head>
+<body id="gorgers">
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1">
+            <a href="../index.html" class="btn btn-link"><span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+        <div class="col-md-4 col-md-offset-3">
+            <h1>Gorgers Subs</h1>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <p>(607) 319-5046 </p>
+        </div>
+        <div id="right-side" class="col-md-6 col-md-push-6">
+            <div id="hours-big" class="hidden-md hidden-sm hidden-xs">
+                <h1>Hours</h1>
+                <div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Mon</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:00am - 9:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Tues</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:00am - 9:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 ">
+                            <h3>Weds</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:00am - 9:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Thurs</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:00am - 9:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Fri</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:00am - 9:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sat</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:00am - 9:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sun</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:00am - 7:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-12">Deliveries end at 8:30</p>
+                    </div>
+                </div>
+            </div>
+            <div id="hours-small" class="hidden-lg col-md-12">
+                <h1>Hours</h1>
+                <p>Monday-Saturday 5:30 - 10:00pm</p>
+                <p>Sunday closed</p>
+            </div>
+            <div id="location">
+                <h1 class="col-md-12">Location</h1>
+                <div class="row-fluid hidden-md hidden-sm hidden-xs">
+                    <iframe class="col-md-12"
+                            style="height:450px; background-color: #222;border: 0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.43734191952!2d-76.499671!3d42.439710000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0819daae0f96f%3A0xa54275ba4331d652!2sGorgers+Subs!5e0!3m2!1sen!2sus!4v1427328582482" frameborder="0"></iframe>
+                </div>
+                <div class="hidden-lg col-md-12">
+                    <p><a href="https://www.google.com/maps/place/Gorgers+Subs/@42.43971,-76.499671,17z/data=!3m1!4b1!4m2!3m1!1s0x89d0819daae0f96f:0xa54275ba4331d652">
+                        116 W State St
+                        Ithaca, NY 14850
+                    </a></p>
+                </div>
+            </div>
+            <div id="salads">
+                <h1 class="col-md-12">Salads</h1>
+                <div class="col-md-10">
+                    <h3>Soy Ginger</h3>
+                    <p>Romaine, Pulled Pork, Cucumbers, Onions, Pickled Carrots & Soy Ginger Dressing</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Caesar</h3>
+                    <p>Romaine, Parmesan, Shredded Chicken & Caesar Dressing</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Buffalo</h3>
+                    <p>Romaine, Shredded Chicken, Onions, Tomatoes, Red Hot & Bleu Cheese</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Garden ranch</h3>
+                    <p>Romaine, Onions, tomatoes, Cucumbers, Pickled Carrots & Ranch Dressing</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6.00</h3>
+                </div>
+            </div>
+            <div id="sides">
+                <div class="col-md-10">
+                    <h3>French Fries</h3>
+                    <p>Large, Handcut</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>French Fries</h3>
+                    <p>Small, Handcut</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$1.75</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Potato Chips</h3>
+                    <p>Large, Handcut</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Potato Chips</h3>
+                    <p>Small, Handcut</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$1.75</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Hummus & Flatbread</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3.00</h3>
+                </div>
+            </div>
+            <div id="soups">
+                <h1 class="col-md-12">Soups</h1>
+                <div class="col-md-10">
+                    <h3>French Onion</h3>
+                    <p>Carmelized Onions, beef Broth Slice of bread & melted Swiss</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Soup Du Jour</h3>
+                    <p>New Soup Everyday. Generally Chili on Tuesday, Vegetarian on Wednesday, Curry on Thursday and
+                    NE Clam Chowder on Friday</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$4.00</h3>
+                </div>
+            </div>
+
+        </div>
+        <div id="left-side" class="col-md-6 col-md-pull-6">
+            <div id="chicken-sub">
+                <h1>Sandwiches</h1>
+                <div class="col-md-10">
+                    <h3>South of the Border</h3>
+                    <p>Choice of Shredded Chicken or Eggplant, Mild Cheddar & Mexican Slaw</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Buffalo</h3>
+                    <p>Choice of Shredded Chicken or Eggplant, Tomatoes, Onions, Lettuce & Bleu Cheese</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Barbecue</h3>
+                    <p>Choice of shredded Chicken or Eggplant, Sharp Cheddar, Onions & Barbecue sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Caribbean Fire</h3>
+                    <p>Choice of shredded Chicken or Eggplant, Onions Lettuce & Scotch Bonnet Citrus Mustard</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Modena</h3>
+                    <p>Choice of shredded chicken or Eggplant, Mayo, Mozzarella, Tomatoes, Onions, Lettuce, &
+                        Balsamic Reduction</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Sweet Thai Chili</h3>
+                    <p>Choice of Shredded Chicken or Eggplant, Onions, Pineapple & Sweet Thai Chili Sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Teriyaki</h3>
+                    <p>Choice of Shredded Chicken or Eggplant, Onions, Pineapple & Teriyaki Sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Chicken bacon ranch</h3>
+                    <p>Shredded Chicken, bacon, tomatoes, Onions, Lettuce & Ranch Dressing</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Chipotle</h3>
+                    <p>Choice of Shredded Chicken or Eggplant, tomatoes, Onions, Black Beans, Cilantro & Chipotle
+                        Ranch</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.25</h3>
+                </div>
+            </div>
+            <div id="beef-sub">
+                <div class="col-md-10">
+                    <h3>Philly</h3>
+                    <p>Choice of Steak or Seitan, Mild Cheddar Cheez & Onions</p>
+                </div>
+                <div class="col-md-2">
+                    <h3></h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Philly Supreme</h3>
+                    <p>Steak, bacon, Mild Cheddar Chee Whiz, Onions & Cubanelle Peppers</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Coconut Shrimp</h3>
+                    <p>Deep Fried Shrimp, Onions, Pickled Carrots & Sweet Thai Chili Sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Shrimp Po' Boy</h3>
+                    <p>Deep Fried Shrimp, Old bay, Onions, tomatoes, Lettuce & Mayo</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Pittsburgh Vegan</h3>
+                    <p>French Fries, Tomatoes, Onions Lettuce & Red Wine Reduction</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$7.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Hummus</h3>
+                    <p>Hummus, Cucumbers, Tomatoes, Onions, Pickled Carrots & Lettuce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$7.25</h3>
+                </div>
+            </div>
+            <div id="pork">
+                <div class="col-md-10">
+                    <h3>BLT</h3>
+                    <p>Bacon, Lettuce, Tomatoes & Mayo </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Bahn Mi</h3>
+                    <p>Choice of Pulled Pork or Eggplant, Cucumbers, Pickled Carrots, Onions, Cilantro, Hoison,
+                        Sriracha & Mayo</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Pulled Pork</h3>
+                    <p>Pulled Pork, Sharp Cheddar, Onions & Barbecue Sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.00</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Cuban</h3>
+                    <p>Pulled Pork, Canadian bacon, Swiss, Pickles, Mayo & Mustard</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Chimichurri</h3>
+                    <p>Choice of Steak or Seitan, Onions, Lettuce & Chimichurri</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Cabernet</h3>
+                    <p>Choice of Steak or Seitan, Sharp Cheddar, Onions, Lettuce & Red Wine Reduction</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="../js/bootstrap-image-gallery.min.js"></script>
+
+</div>
+</body>
+</html>

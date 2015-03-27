@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+
+</head>
+<body id="reds">
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1">
+            <a href="../index.html" class="btn btn-link"><span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+        <div class="col-md-4 col-md-offset-3">
+            <h1>Red's Place</h1>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <p>(607) 319-4486</p>
+        </div>
+        <div id="right-side" class="col-md-6 col-md-push-6">
+            <div id="hours-big" class="hidden-md hidden-sm hidden-xs">
+                <h1>Hours</h1>
+                <div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Mon</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:30am - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Tues</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:30am - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 ">
+                            <h3>Weds</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:30am - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Thurs</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:30am - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Fri</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:30am - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sat</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:30am - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sun</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>11:30am - 10:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hours-small" class="hidden-lg col-md-12">
+                <h1>Hours</h1>
+                <p>Monday-Saturday 5:30 - 10:00pm</p>
+                <p>Sunday closed</p>
+            </div>
+            <div id="location">
+                <h1 class="col-md-12">Location</h1>
+                <div class="row-fluid hidden-md hidden-sm hidden-xs">
+                    <iframe class="col-md-12"
+                            style="height:450px; background-color: #222;border: 0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.427332818438!2d-76.49545500000002!3d42.43992300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0819b6deaf8f3%3A0xfd7fd84a4aa98715!2sRed&#39;s+Place+on!5e0!3m2!1sen!2sus!4v1427377480919" frameborder="0"></iframe>
+                </div>
+                <div class="hidden-lg col-md-12">
+                    <p><a href="https://www.google.com/maps/place/Red%27s+Place+on/@42.439923,-76.495455,17z/data=!3m1!4b1!4m2!3m1!1s0x89d0819b6deaf8f3:0xfd7fd84a4aa98715">
+                        107 N Aurora St, Ithaca, NY 14850
+                    </a></p>
+                </div>
+            </div>
+            <div id="flatbreads">
+                <h1 class="col-md-12">flatbreads</h1>
+                <div class="col-md-10">
+                    <h3>thee bruschetta </h3>
+                    <p>chicken bruschetta, white onion, mozzarella
+                        & virgin olive oil</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>proper pig</h3>
+                    <p>applewood smoked bacon, caramelized onion, goat cheese, fresh thyme with a fig glaze</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>pesto! pesto!</h3>
+                    <p>grilled chicken, mozzarella, asiago, wild mushroom blend, pesto</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>wild thing </h3>
+                    <p>wild mushrooms, rosemary, prosciutto &
+                        fontina</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$13</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>lasagna on a flatbread</h3>
+                    <p>sliced meatballs, ricotta, tomato,
+                        mozzarella & parsley</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>veggie lover</h3>
+                    <p>marinated portobellos, artichokes, roasted
+                        red peppers, asiago, virgin olive oil </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>betty’s white 9</h3>
+                    <p>garlic, olive oil, mozzarella, fresh
+                        oregano, cracked black pepper</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$9</h3>
+                </div>
+            </div>
+            <div id="burgers">
+                <h1 class="col-md-12">burgers & such</h1>
+                <p class="col-md-12">all burgers come with a side, gluten free buns available for $1 more</p>
+                <div class="col-md-10">
+                    <h3>aurora street burger</h3>
+                    <p>citrus bacon, tomato, arugula, cheddar,
+                        roasted garlic aioli</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$13</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>crab cake burger</h3>
+                    <p>pan seared seasoned crab meat topped with
+                        dijon horseradish slaw, lemon aioli </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$13</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>lamb burger</h3>
+                    <p>seasoned lamb, tzatziki sauce, tomato, onion,
+                        feta</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$13</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>turkey burger</h3>
+                    <p>cheddar & honey mustard mixed in topped with
+                        tomato, arugula, and garlic aioli</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$13</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>marinated grilled portobello mushroom cap </h3>
+                    <p>topped with gouda, arugula, tomato, roasted
+                        red pepper coulis (vegetarian)</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>choice of side:</h3>
+                    <p>rustic cut fries, side salad,
+                        tator tots, dijon horseradish slaw,
+                        housemade applesauce, steamed veggies</p>
+                </div>
+            </div>
+            <div id="greens">
+                <h1 class="col-md-12">greens</h1>
+                <div class="col-md-10">
+                    <h3>thai beet salad</h3>
+                    <p>julienned beets, matchstick carrots, shredded
+                        cabbage, minced fresh ginger with a peanutlime-cilantro
+                        vinaigrette on spring mix</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$9</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>grilled marinated mushroom cap</h3>
+                    <p>red onion, smoke gouda, roasted red peppers over
+                        spring mix </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>stuffed chicken caesar baby iceberg head</h3>
+                    <p>grilled chicken, red onion, croutons, parmesan
+                        shavings with house made creamy caesar</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$10</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>harvest salad </h3>
+                    <p>toasted walnuts, crumbled bleu cheese, dried
+                        cranberries & roasted butternut squash with
+                        spring mix</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>farm salad</h3>
+                    <p>smoked gouda, honey roasted sunflower seeds,
+                        peppered bacon, peas, green beans, diced red
+                        peppers over spring mix with a shallot
+                        vinaigrette</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$9</h3>
+                </div>
+                <div class="col-md-12">
+                    <p>chicken $3, sliced portobellos $3, mahi mahi $4</p>
+                    <p>dressings: balsamic vinaigrette, bleu cheese,
+                        jalapeño ranch, raspberry vinaigrette, ranch</p>
+                </div>
+
+
+            </div>
+            <div id="kids">
+                <h1 class="col-md-12">kid's menu</h1>
+                <div class="col-md-10">
+                    <h3>sage's cheese flatbread</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>red’s cheese burger</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>kenzie’s zoo animal pasta</h3>
+                    <p>marinara sauce or butter</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5</h3>
+                </div>
+                <div class="col-md-12">
+                    <p>choice of side: rustic cut fries, side
+                        salad, tator tots, dijon horseradish slaw,
+                        housemade applesauce, steamed veggies, or
+                        apple slices</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="left-side" class="col-md-6 col-md-pull-6">
+            <div id="appetizers">
+                <h1 class="col-md-12">Plates to Share</h1>
+                <div class="col-md-10">
+                    <h3>boom boom shrimp</h3>
+                    <p>crispy ale battered shrimp tossed in red’s
+                        spicy chili sauce (1/4lb or 1/2lb) </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$7, $14</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>greasy meat board</h3>
+                    <p>house selection of charcuterie & charred ciabatta</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>cheese board</h3>
+                    <p>five selected cheeses, our cranberry–nut jam
+                        & golden raisin crisps</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>red’s pot of gold</h3>
+                    <p>fresh ricotta baked with red’s chili tomato
+                        oil & a pile of charred ciabatta</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>loaded cheese fries or tator tots</h3>
+                    <p>beer infused cheese sauce, scallions, bacon,
+                        red peppers over our rustic fries</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>rosebuds</h3>
+                    <p>chinese five spiced bbq pulled short rib
+                        sliders with sriracha slaw (3 or 6 pieces)</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8, $14</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>red handed tacos with pork or mahi mahi</h3>
+                    <p>build your own 4 mini soft tacos, pico de gallo, pork
+                        carnitas or mahi mahi, house made jalapeño slaw,
+                        guacamole, cilantro & lime</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12, $14</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>red-mosas (vegan) </h3>
+                    <p>six crispy samosas over red’s indian curry sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$10</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>eight jumbo thai sweet & spicy chicken wings</h3>
+                    <p>tossed with sugar, red chili, salt and fish sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$10</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>high tide spiced peel & eat shrimp </h3>
+                    <p>spiced ale peel & eat shrimp with red’s red sauce (1/4lb or 1/2lb)</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$7, $14</h3>
+                </div>
+            </div>
+            <div id="sandwiches">
+                <h1 class="col-md-12">artisans sandwiches</h1>
+                <p>all sandwiches come with a side, gluten free buns available for $1 more</p>
+                <div class="col-md-10">
+                    <h3>the mushroom lovers melt </h3>
+                    <p>five blend mushrooms, herbed goat cheese,
+                        caramelized onions, provolone, mushroom jus
+                        on a toasted rustic roll</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>our cuban </h3>
+                    <p>rum basted ham, housemade chimichurri pork
+                        loin, whole grain dijon mustard, smoked
+                        gouda with house made dill pickles on
+                        ciabatta</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$14</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>market fish club </h3>
+                    <p>blackened mahi mahi, guacamole, bacon,
+                        arugula, tomato on a toasted rustic sub roll</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$13</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>take on the steak</h3>
+                    <p>charred grilled steak with a housemade
+                        chimichurri sauce topped with peruvian salsa on
+                        a toasted rustic sub roll </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$15</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>gramps’ slow roasted honey turkey breast </h3>
+                    <p>bacon, arugula, fontina, homemade
+                        cranberry walnut compote, roasted garlic
+                        aioli on a toasted rustic sub roll</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>grilled chicken melt </h3>
+                    <p>five mushroom blend, ancho peppered
+                        bacon, honey mustard and topped with
+                        mozzarella on a toasted rustic sub roll</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11</h3>
+                </div>
+                <div class="col-md-12">
+                    <h3>choice of side:</h3>
+                    <p>rustic cut fries, side
+                        salad, tator tots, dijon horseradish slaw,
+                        housemade applesauce, steamed veggies</p>
+                </div>
+            </div>
+            <div id="sides">
+                <h1 class="col-md-12">red's sides</h1>
+                <div class="col-md-10">
+                    <h3>rustic cut fries</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>side salad</h3>
+                    <p>balsamic vinaigrette, bleu cheese, jalapeño
+                        ranch, raspberry vinaigrette, ranch</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>tater tots</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>dijon horseradish slaw</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>housemade applesauce</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>steamed veggies</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+            </div>
+            <div id="desserts">
+                <h1 class="col-md-12">desserts</h1>
+                <div class="col-md-10">
+                    <h3>s'mores</h3>
+                    <p>warm hershey chocolate cobbler with
+                        crumbled graham crackers topped with
+                        roasted marshmallows </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5></h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>fried dough nachos</h3>
+                    <p>topped with cinnamon & sugar with a
+                        housemade caramel dipping sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>triple chocolate cake</h3>
+                    <p>it’s sugar free, but you would never knowgarnished
+                        with a black cherry reduction</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>ice cream sandwich </h3>
+                    <p>purity’s vanilla ice cream in between our
+                        chocolate chip cookies</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>red’s jelly donut</h3>
+                    <p>sugar doughnut topped with purity’s vanilla
+                        ice cream & raspberry sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="../js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>

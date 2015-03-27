@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+
+</head>
+<body>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="container-fluid">
+    <div class="row">
+        <div class="col-md-1">
+            <a href="../index.html" class="btn btn-link"><span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+        <div class="col-md-4 col-md-offset-3">
+            <h1>Maxie's Supper Club and Oyster Bar</h1>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <p>(607) 272 4136</p>
+        </div>
+        <div id="right-side" class="col-md-6 col-md-push-6">
+            <div id="hours-big" class="hidden-md hidden-sm hidden-xs">
+                <h1>Hours</h1>
+                <div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Mon</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:00pm - 11:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Tues</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:00pm - 11:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 ">
+                            <h3>Weds</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:00pm - 11:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Thurs</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:00pm - 11:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Fri</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:00pm - 11:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sat</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:00pm - 11:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sun</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:00pm - 11:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hours-small" class="hidden-lg col-md-12">
+                <h1>Hours</h1>
+                <p>Everyday 5:00pm - 11:00pm</p>
+            </div>
+            <div id="location">
+                <h1 class="col-md-12">Location</h1>
+                <div class="row-fluid hidden-md hidden-sm hidden-xs">
+                    <iframe class="col-md-12"
+                            style="height:450px; background-color: #222;border: 0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.467415969053!2d-76.51022600000002!3d42.43906999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d081716671d803%3A0x751e668cb0c73545!2sMaxie&#39;s+Supper+Club+%26+Oyster+Bar!5e0!3m2!1sen!2sus!4v1427396134651" frameborder="0"></iframe>
+                </div>
+                <div class="hidden-lg col-md-12">
+                    <p><a href="https://www.google.com/maps/place/Maxie%27s+Supper+Club+%26+Oyster+Bar/@42.43907,-76.510226,17z/data=!3m1!4b1!4m2!3m1!1s0x89d081716671d803:0x751e668cb0c73545">
+                        635 W State St
+                        Ithaca, NY 14850
+                    </a></p>
+                </div>
+            </div>
+            <div id ="specialties">
+                <h1 class="col-md-12">Soul-Stirrin' Specialties</h1>
+                <div class="col-md-10">
+                    <h3>Jambalaya "Me-Oh-My-A"</h3>
+                    <p>shrimp, andouille, & chicken in zesty creole rice</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$18.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Shrimp & grits</h3>
+                    <p>plump shrimp, rich & spicy tasso sauce, over yellow grits</p>
+                    <p>add grilled andouille sausage for $4.95</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>half $14.50 full $18.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Maxie's Deluxe Crabcake Platter</h3>
+                    <p>with cajun mayo, "rwb" slaw, sweet potato fries</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$21.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Jumbo Gumbo</h3>
+                    <p>a big bowl of Maxie's finest, served with "rwb" slaw</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$14.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Blackened Catfish Creole</h3>
+                    <p>wtih zesty tomato sauce, red beans & rice, daily vegetable</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$17.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Damn-Good Fish Fry</h3>
+                    <p>with tartar sauce, rough-cut fries, creamy slaw</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$15.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>"Chicken-Fried" Chicken</h3>
+                    <p>with tasso gravy, mashed potatoes, daily vegetable</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$16.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Pulled Pork Plate</h3>
+                    <p>eastern north carolina-style, creamy slaw, bbq beans</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$15.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Pulled Pork Sandwich</h3>
+                    <p>topped with slaw, served with bbq beans</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>BBQ Pork Spare Ribs</h3>
+                    <p>creamy slaw, bbq beans</p>
+                    <p>add Pulled Prk for $6.95</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>half rack $17.95, full rack $27.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Maxie's Daily Steak</h3>
+                    <p>with Maxie's steak sauce, bayou onions, mashed potatoes, vegetable</p>
+                    <p>add BBQ Shrimp for $7.95</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>Market</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Cajun-seared Ahi Tuna</h3>
+                    <p>with maple brown-butter, horseradish potato cake, sauteed spinach</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$23.95</h3>
+                </div>
+            </div>
+            <div id="poboys">
+                <h1 class="col-md-12">Po'boys</h1>
+                <p class="col-md-12">on french bread with lettuce & tomato, served with cajun fries</p>
+                <div class="col-md-10">
+                    <h3>Bleu Cheese Burger</h3>
+                    <p>with carmaelized onions, mayo</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Chicken</h3>
+                    <p>grilled, bbq, fried or blackened with mayo</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$10.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Andouille Sausage</h3>
+                    <p>with romoulade and "rwb" slaw</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Fried Fish</h3>
+                    <p>with tartar sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Crab Cake</h3>
+                    <p>with cajun mayo</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$14.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Blackened Catfish</h3>
+                    <p>with tartar sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>with tartar sauce</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Fried Shrimp</h3>
+                    <p>with remoulade</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Fried Oysters</h3>
+                    <p>with creamy mignonette</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$14.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Nick's Half n' half</h3>
+                    <p>with remoulade</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$13.95</h3>
+                </div>
+            </div>
+        </div>
+        <div id="left-side" class="col-md-6 col-md-pull-6">
+            <div id="soup">
+                <h1 class="col-md-12">From The Kettle</h1>
+                <div class="col-md-10">
+                    <h3>Crab and Corn Chowder</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>C $4.95,B $7.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Maxie's Mighty-Mighty Gumbo</h3>
+                    <p>of chicken, andouille & crawfish, served over rice</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>C $5.95,B $8.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Potato & Cheddar Bisque</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>C $4.95,B $7.95</h3>
+                </div>
+            </div>
+            <div id="salad">
+                <h1 class="col-md-12">Salads</h1>
+                <div class="col-md-10">
+                    <h3>Supper Club Salad</h3>
+                    <p>Field Greens, raspberry vinaigrette, bleu cheese, toasted pecans & fresh apple</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>S $5.50 L $8.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Caesar Salad</h3>
+                    <p>romaine hearts, traditional dressing, parmesan cheese & croutons</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>S $5.50 L $8.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Iceberg Wedge</h3>
+                    <p>with cajun ranch, double-smoked bacon, red onion & tomato</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-12">
+                    <p>add to your salad: chicken brest, portobello or bbq tofu $4.95</p>
+                    <p>ahi tuna, shrimp or catfish $7.95</p>
+                    <p>fried oysters $9.95</p>
+                </div>
+
+            </div>
+            <div id="appetizers">
+                <h1 class="col-md-12">Appetizers</h1>
+                <div class="col-md-10">
+                    <h3>Fresh-shucked Raw Oysters</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>Market</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Fresh-shucked Raw Clams</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>Market</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Shellfish Platter</h3>
+                    <p>6 oysters, 2 clams, 1/4lb shrimp </p>
+                </div>
+                <div class="col-md-2">
+                    <h3>Market</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Peel-n-Eat Shrimp</h3>
+                    <p>served chilled 1/4lb or 1/2lb</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$9.50, $13.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>New Orleans BBQ Shrimp</h3>
+                    <p>with grilled french bread</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$10.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Quarter Rack Ribs</h3>
+                    <p>with creamy slaw</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$10.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Cracker-Crusted Oysters</h3>
+                    <p>with creamy mignonette</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$12.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Maxie's Deluze Crabcake</h3>
+                    <p>with cajun mayo & "rwb" slaw</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Cajun Popcorn</h3>
+                    <p>zesty fried crawfish tails with remoulade</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Fried Green Tomatoes</h3>
+                    <p>with remoulade</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Steam Littleneck Clams</h3>
+                    <p>in garlic butter broth with grilled french bread</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>(8)$10.95, (12)$14.95, (16)$18.95</h3>
+                </div>
+            </div>
+            <div id="vegetarian">
+                <h1 class="col-md-12">Vegetarian Options</h1>
+                <div class="col-md-10">
+                    <h3>Darn Tasty Tofu Fry</h3>
+                    <p>with tartar sauce, rough-cut fries, creamy slaw</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$14.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>BBQ Organic Tofu Plate</h3>
+                    <p>with mashed potatoes and daily vegetable</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$14.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Grilled Portobello</h3>
+                    <p>with creole tomato sauce, horseradish potato cake, daily vegetable</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$15.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>vegetarian Jambalaya</h3>
+                    <p>smoked tofu, pecans, spinach and red beans in zesty creole rice</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$15.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Portobello Po'boy</h3>
+                    <p>with cajun mayo, bayou onions, cajun fries</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>BBQ Organic Tofu Sandwich</h3>
+                    <p>topped with creamy slaw, served with cajun fries</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$11.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Fried Green Tomato Po'Boy</h3>
+                    <p>with remoulade, served with cajun fries</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$10.95</h3>
+                </div>
+            </div>
+            <div id="sides">
+                <h1 class="col-md-12">Fries & Sides</h1>
+                <div class="col-md-10">
+                    <h3>Sweet Ptoato Fries</h3>
+                    <p>with chive creme fraiche</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Cajn Fries</h3>
+                    <p>with cajun mayo</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Rough-cut Fries</h3>
+                    <p>with malt vinegar</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>BBQ Beans or Vegetarian Red Beans and Rice</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Slaw</h3>
+                    <p>'rwb' or creamy</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Yelow Grits</h3>
+                    <p>with tasso sauce</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Mashed Potatoes</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$4.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Sauteed Spinach</h3>
+                    <p>with roasted garlic</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$4.50</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Daily Vegetable</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>Market</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>grilled Andouille Sausage</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$4.95</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Pulled Pork</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6.95</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="../js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>

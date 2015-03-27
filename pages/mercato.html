@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+
+</head>
+<body id="mercato">
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1">
+            <a href="../index.html" class="btn btn-link"><span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+        </div>
+        <div class="col-md-4 col-md-offset-3">
+            <h1>Mercato Bar & Kitchen</h1>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+            <p>(607)-319-5171</p>
+        </div>
+        <div id="right-side" class="col-md-6 col-md-push-6">
+            <div id="hours-big" class="hidden-md hidden-sm hidden-xs">
+                <h1>Hours</h1>
+                <div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Mon</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:30pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Tues</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:30pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 ">
+                            <h3>Weds</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:30pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Thurs</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:30pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Fri</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:30pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sat</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>5:30pm - 10:00pm</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h3>Sun</h3>
+                        </div>
+                        <div class="col-md-8 times">
+                            <p>Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hours-small" class="hidden-lg col-md-12">
+                <h1>Hours</h1>
+                <p>Monday-Saturday 5:30 - 10:00pm</p>
+                <p>Sunday closed</p>
+            </div>
+            <div id="location">
+                <h1 class="col-md-12">Location</h1>
+                <div class="row-fluid hidden-md hidden-sm hidden-xs">
+                    <iframe class="col-md-12"
+                            style="height:450px; background-color: #222;border: 0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.4245133459895!2d-76.49587000000005!3d42.43998300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d0819b6dd23c31%3A0x60bb1f0ad9958b53!2sMercato+Bar+%26+Kitchen!5e0!3m2!1sen!2sus!4v1427303779546" frameborder="0"></iframe>
+                </div>
+                <div class="hidden-lg col-md-12">
+                    <p><a href="https://www.google.com/maps/place/Mercato+Bar+%26+Kitchen/@42.439983,-76.49587,17z/data=!3m1!4b1!4m2!3m1!1s0x89d0819b6dd23c31:0x60bb1f0ad9958b53">Ithaca Commons
+                        108 N Aurora St
+                        Ithaca, NY 14850</a></p>
+                </div>
+            </div>
+            <div id="starters">
+                <h1 class="col-md-12">Starters</h1>
+                <div class="col-md-10">
+                    <h3>House Marinated Olives & Marcona Almods</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$8</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Chicken Liver & Pickled Red Onion Crostini</h3>
+                    <p>roasted with onion & bay leaf, blended with dark rum</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>RICOTTA & FIG MOSTARDA CROSTINI</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>MORTADELLA MOUSSE CROSTINI</h3>
+                    <p>mascarpone, parmigiano, toasted pistachios, aceto balsamico</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>CROSTINI SAMPLER</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>9</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>SELECTION OF CURED MEATS, OLIVES & CHEESES</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>16</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>CLAMS CASINO</h3>
+                    <p>with sautéed bacon, onion, red & green bell pepper</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>10</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>WATERCRESS SALAD</h3>
+                    <p>red onion, crumbled gorgonzola, red wine vinaigrette</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>7</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>MERCATO MIXED GREENS</h3>
+                    <p>artisan blend of romaine, red leaf & red oak lettuces,balsamic vinaigrette</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Tonight's Soup</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>6</h3>
+                </div>
+            </div>
+        </div>
+        <div id="left-side" class="col-md-6 col-md-pull-6">
+            <div id="cocktails">
+                <h1 class="col-md-12">Cocktails</h1>
+                <p class="col-md-12">All cocktails are $10</p>
+                <div class="col-md-12">
+                    <h3>Bandito</h3>
+                    <p>Aperol, lime, grenadine, Sombra Mezcal</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Brooklyn</h3>
+                    <p>Rittenhouse Rye, Dolin Dry Vermouth, Bigallet Amer, Maraschino</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Communist</h3>
+                    <p>Plymouth Gin, bloood orange, Cherry Heering, lemon</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Ithaca 37</h3>
+                    <p>Averell Damson Gin, lemon, Prosecco</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Sardinian Sour</h3>
+                    <p>W.L> Weller Bourbon. Mirto, lemon, Angostura</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Siren Song</h3>
+                    <p>Plymouth Gin, Salers Aperitif, honey syrup, lemon, mint, cucumber</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Slim Charles</h3>
+                    <p>Rittenhouse Rye, Carpano Antica, Fernet Branca, Green Chartreuse, Angostura & Orange bitters</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Sparkling Blue Moon</h3>
+                    <p>LIV Vodka, Creme de Violette, Prosecco, lime</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Stugots</h3>
+                    <p>Vecchia Romagna Brandy, Montenegro Amaro, Yellow Chartreuse, lemon, agave</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Third Time's a Charm</h3>
+                    <p>Plymouth Gin, Cocchi Americano, Orange Curacao, Fernet Branca</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Vesper</h3>
+                    <p>Beefeater Gin, Stolichnaya Vodka, Cocchi Americano</p>
+                </div>
+        </div>
+            <div id="beer">
+                <h1 class="col-md-12">Draft Beer</h1>
+                <div class="col-md-10">
+                    <h3>Sixpoint Crisp Lager</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Ommegang Rare Vos</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Bronx Pale Ale</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Ithaca Flower Power</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6</h3>
+                </div>
+                <h1 class="col-md-12">Bottled Beer</h1>
+                <div class="col-md-10">
+                    <h3>Peroni</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Erdinger Non-Alcoholic</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$5</h3>
+                </div>
+            </div>
+            <div id="soda-water">
+                <h1 class="col-md-12">Soda & Water</h1>
+                <div class="col-md-10">
+                    <h3>Ithaca Ginger Beer or Root Beer</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Limonata or Aranciata</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$3</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>Saratoga Sparkling or Still water (28oz)</h3>
+                </div>
+                <div class="col-md-2">
+                    <h3>$6</h3>
+                </div>
+            </div>
+            <div id="specialties">
+                <h1 class="col-md-12">Specialties</h1>
+                <div class="col-md-10">
+                    <h3>PACCHERI WITH WHITE BOLOGNESE</h3>
+                    <p>sausage, beef, porcini mushroom, cream, parmigiano</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$24</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>GNOCCHI WITH LAMB RAGU</h3>
+                    <p>red wine braised lamb, parmigiano</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$24</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>SPINACH & CHEESE RAVIOLI</h3>
+                    <p>ricotta, mozzarella, goat cheese, pecorino, oven roasted tomato sauce/p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$22</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>FRESH FISH IN PARCHMENT</h3>
+                    <p>fresh seasonal vegetable,fingerling potatoes</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>MKT</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>PAN SEARED DAY BOAT SCALLOPS</h3>
+                    <p>carrot purée, roasted oyster mushrooms, shoe-string fries</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$30</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>OSSO BUCO</h3>
+                    <p>braised pork shank over creamy polenta</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>$26</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>CHICKEN PICCATA</h3>
+                    <p>lemon, caper, butter, white wine,fresh seasonal vegetable,fingerling potatoes</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>22</h3>
+                </div>
+                <div class="col-md-10">
+                    <h3>GRILLED HANGER STEAK</h3>
+                    <p>fresh seasonal vegetable, shoe-string fries</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>32</h3>
+                </div>
+                <div class="col-md-12">
+                    <h3>fresh seasonal vegetable 4, shoe-string fries 4, herb-roasted fingerling potatoes 4</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="../js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>
